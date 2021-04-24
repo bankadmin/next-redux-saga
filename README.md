@@ -1,8 +1,9 @@
-# Getting Started
-make next js with redux-saga 2021
+## Getting Started
 
 First, run the development server:
 
+```bash
 npm run dev
-   or
+# or
 yarn dev
+```
