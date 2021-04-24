@@ -24,7 +24,7 @@ export const getStaticProps = wrapper.getStaticProps(async ({store}) => {
         store.dispatch(loadData());
         store.dispatch(END);
     }
-    // @ts-ignore
+
     await store.sagaTask?.toPromise();
 });
 

@@ -20,7 +20,6 @@ export const makeStore: MakeStore<AppState> = () => {
 
     const store = createStore(rootReducer, bindMiddleware([sagaMiddleware]));
 
-    // @ts-ignore
     store.sagaTask = sagaMiddleware.run(rootSaga);
 
     return store;
